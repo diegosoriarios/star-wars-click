@@ -44,7 +44,7 @@ $(document).ready(function(){
 			gem -= this.value;
 			$('#HUD').html("<p>" + gem + "</p>");
 			this.value *= 2;
-			$(this).html('$ <span id="v1">' + this.value + '</span> - ' + texto[1] + ' - <span id="g1">'+ mps + '</span>/s');
+			$(this).html('$ <span id="v1">' + this.value + '</span> - ' + texto[1] + ' - <span id="g1">'+ mps.toFixed(2) + '</span>/s');
 		}else{
 			alert("Dinheiro insuficiente");
 		}
