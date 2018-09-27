@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css?family=VT323');
+
+
+body{
+	background-color: black;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-image: url("http://i0.wp.com/blog.sklambert.com/wp-content/uploads/2012/09/bg.png?resize=300%2C180");
+	background-size: 50%;
+}
+
+.box-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#inimigo{
+	width: 100px;
+	height: 100px;
+	margin: 0 auto;
+	cursor: pointer;
+}
+
+#inimigo:hover{
+	transform: scale(1.5);
+}
+
+#HUD{
+	color: white;
+	text-align: center;
+	margin-top: 25px;
+}
+
+#terminal{
+	width: 50%;
+	height: 100px;
+	background-color: #000;
+	border: 1px solid white;
+	bottom: 10px;
+	position: absolute;
+	padding: 5px;
+	color: green;
+	font-family: 'VT323', monospace;
+}
+
+#box{
+	display: none;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.6);
+	z-index: 10;
+	top: 0;
+	left: 0;
+}
+
+#shop{
+	display: none;
+	width: 80%;
+	height: 80%;
+	background-color: black;
+	margin: 5% 10%;
+	color: white;
+}
+
+#close{
+	cursor: pointer;
+}
+
+#menu{
+	color: white;
+}
+
+#menu-list li{
+	width: 150px;
+	height: 100px;
+	border: 1px solid white;
+	padding: 5px;
+	list-style-type: none;
+	display: inline;
+	font-family: 'VT323', monospace;
+	cursor: pointer;
+}
+
+
+#gem-list{
+	width: 45%;
+	float: right;
+	padding: 0;
+}
+
+#shop-list{
+	display: inline;
+	float: left;
+	width: 45%;
+}
+
+#shop-list li, #gem-list li{
+	list-style-type: none;
+	height: 50px;
+	line-height: 50px;
+	border: 1px solid white;
+	border-radius: 10px;
+	width: 80%;
+	margin: 2%;
+	cursor: pointer;
+}
+
+#money-list{
+	list-style-type: none;
+	font-family: 'VT323', monospace;
+}
+
+#close{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	color:white;
+}
+
+
+@media screen and (max-width: 480px) {
+	  #terminal {
+	    width: 90%;
+	  }
+
+	#shop{
+		display: none;
+		width: 80%;
+		height: 80%;
+		background-color: black;
+		margin: 5% 10%;
+		color: white;
+		font-size: 0.4em;
+	}
+
+	#close{
+		cursor: pointer;
+	}
+
+	#menu{
+		color: white;
+	}
+
+	#menu-list li{
+		width: 45%;
+		height: 50px;
+		border: 1px solid white;
+		padding: 5px;
+		list-style-type: none;
+		display: inline;
+		font-family: 'VT323', monospace;
+		cursor: pointer;
+	}
+
+
+	#gem-list{
+		width: 40%;
+		float: right;
+		border-left: none;
+		padding-left: 0;
+	}
+
+	#shop-list{
+		margin-left: 10px;
+		display: inline;
+		float: left;
+		width: 40%;
+		padding-left: 0;
+	}
+
+	#shop-list li, #gem-list li{
+		list-style-type: none;
+		height: 25px;
+		line-height: 10px;
+		border: 1px solid white;
+		border-radius: 10px;
+		width: 80%;
+		margin: 2%;
+		padding: 2%;
+		cursor: pointer;
+		margin-top: 5%;
+		text-align: center;
+	}
+
+	#close{
+		position: absolute;
+		right: 10px;
+		top: 10px;
+		color:white;
+	}
+}
