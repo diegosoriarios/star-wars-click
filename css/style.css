@@ -6,7 +6,7 @@ body{
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
-	background-image: url("http://i0.wp.com/blog.sklambert.com/wp-content/uploads/2012/09/bg.png?resize=300%2C180");
+	background-image: url("../img/bg.png");
 	background-size: 50%;
 }
 
